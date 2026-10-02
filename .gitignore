@@ -1,0 +1,47 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Testing & Coverage
+coverage/
+.nyc_output
+.pytest_cache/
+__pycache__/
+*.py[cod]
+*$py.class
+.coverage
+htmlcov/
+
+# Next.js Build Output
+.next/
+out/
+build/
+dist/
+
+# Python Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+
+# Environment Variables & Secrets (NEVER COMMIT REAL SECRETS)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+!*.env.example
+
+# OS & IDE
+.DS_Store
+*.pem
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Git backups of nested repos
+_review/git_backups/

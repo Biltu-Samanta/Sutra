@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>LEA Forensic Investigation Report – Case 997f6c25-65de-495a-abfa-d8734a241dbc</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 20mm 15mm 20mm 15mm;
+      @bottom-right {
+        content: "Page " counter(page) " of " counter(pages);
+        font-size: 8pt;
+        color: #718096;
+      }
+      @bottom-left {
+        content: "CONFIDENTIAL – LAW ENFORCEMENT SENSITIVE | SUTRA ENGINE";
+        font-size: 8pt;
+        color: #718096;
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size: 10pt;
+      color: #1a202c;
+      background: #fff;
+      line-height: 1.5;
+    }
+    .header-table {
+      width: 100%;
+      border-bottom: 2px solid #2b6cb0;
+      padding-bottom: 12px;
+      margin-bottom: 18px;
+    }
+    .badge-confidential {
+      background: #c53030;
+      color: #fff;
+      font-size: 7.5pt;
+      font-weight: bold;
+      padding: 3px 8px;
+      border-radius: 3px;
+      display: inline-block;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .title {
+      font-size: 16pt;
+      font-weight: 700;
+      color: #1a365d;
+      margin-top: 6px;
+    }
+    .subtitle {
+      font-size: 9.5pt;
+      color: #4a5568;
+    }
+    .section-title {
+      font-size: 11pt;
+      font-weight: bold;
+      color: #2b6cb0;
+      border-bottom: 1px solid #e2e8f0;
+      padding-bottom: 4px;
+      margin-top: 18px;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    table.data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 12px;
+      font-size: 8.5pt;
+    }
+    table.data-table th, table.data-table td {
+      border: 1px solid #cbd5e0;
+      padding: 5px 8px;
+      text-align: left;
+    }
+    table.data-table th {
+      background: #edf2f7;
+      color: #2d3748;
+      font-weight: 600;
+    }
+    .evidence-box {
+      background: #f7fafc;
+      border: 1px dashed #4a5568;
+      padding: 10px;
+      margin-top: 14px;
+      border-radius: 4px;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 8pt;
+      word-break: break-all;
+    }
+    .score-badge {
+      font-weight: bold;
+      padding: 2px 6px;
+      border-radius: 3px;
+      background: #ebf8ff;
+      color: #2b6cb0;
+    }
+    .footer-seal {
+      margin-top: 25px;
+      border-top: 1px solid #cbd5e0;
+      padding-top: 10px;
+      font-size: 8pt;
+      color: #4a5568;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <table class="header-table">
+    <tr>
+      <td>
+        <span class="badge-confidential">CONFIDENTIAL // LEA SENSITIVE</span>
+        <div class="title">BLOCKCHAIN FORENSIC INVESTIGATION REPORT</div>
+        <div class="subtitle">Automated Intelligence & VASP Attribution Engine | Sutra Platform</div>
+      </td>
+      <td style="text-align: right; vertical-align: bottom;">
+        <strong>Docket Ref:</strong> LEA-SUTRA-F21342BF<br/>
+        <strong>Generated:</strong> 2026-10-02T22:28:04.763599+00:00
+      </td>
+    </tr>
+  </table>
+
+  <!-- Case Metadata -->
+  <div class="section-title">1. Case Identification & Authority</div>
+  <table class="data-table">
+    <tr>
+      <th style="width: 25%;">Case / Incident ID</th>
+      <td>997f6c25-65de-495a-abfa-d8734a241dbc</td>
+      <th style="width: 25%;">NCRP Reference</th>
+      <td>997f6c25-65de-495a-abfa-d8734a241dbc</td>
+    </tr>
+    <tr>
+      <th>Investigating Officer</th>
+      <td>Investigating Officer</td>
+      <th>Badge / Service ID</th>
+      <td>CYBER-LE-01</td>
+    </tr>
+    <tr>
+      <th>Agency / Division</th>
+      <td>State Cyber Crime Police / I4C Portal</td>
+      <th>Jurisdiction</th>
+      <td>India (BNSS / IT Act)</td>
+    </tr>
+  </table>
+
+  <!-- Target & Attribution Summary -->
+  <div class="section-title">2. Executive Forensics & VASP Attribution Summary</div>
+  <table class="data-table">
+    <tr>
+      <th style="width: 25%;">Suspect Origin Wallet</th>
+      <td colspan="3"><code>TXymSo62bdgnogBuxbEKSPo9h42hUBh1gu</code> (TRON)</td>
+    </tr>
+    <tr>
+      <th>Identified VASP</th>
+      <td><strong>Unknown Entity</strong></td>
+      <th>FIU-IND Registered</th>
+      <td>NO / Offshore Entity</td>
+    </tr>
+    <tr>
+      <th>Nearest KYC Deposit Wallet</th>
+      <td colspan="3"><code>N/A</code></td>
+    </tr>
+    <tr>
+      <th>Exchange Hot Wallet Sweep</th>
+      <td colspan="3"><code>N/A</code></td>
+    </tr>
+    <tr>
+      <th>Attribution Confidence</th>
+      <td><span class="score-badge">0.0 / 100</span></td>
+      <th>Hops to Deposit</th>
+      <td>N/A Hop(s)</td>
+    </tr>
+    <tr>
+      <th>Attribution Rationale</th>
+      <td colspan="3">Insufficient data to attribute centralized exchange.</td>
+    </tr>
+  </table>
+
+  <!-- Multi-factor Confidence Breakdown -->
+  
+
+  <!-- Flow Ledger -->
+  <div class="section-title">4. Forensically Traced Transaction Ledger</div>
+  <table class="data-table">
+    <thead>
+      <tr>
+        <th>Tx Hash</th>
+        <th>From Address</th>
+        <th>To Address</th>
+        <th>Value</th>
+        <th>Timestamp (UTC)</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+      <tr>
+        <td><code>9ca70bad1e8bb837...</code></td>
+        <td><code>TXymSo62bdgn...</code></td>
+        <td><code>TMTWQx6qSHGd...</code></td>
+        <td>1050.00 USDT</td>
+        <td>2026-05-11 12:47:42 UTC</td>
+      </tr>
+      
+      <tr>
+        <td><code>920b3296eb4497d8...</code></td>
+        <td><code>TXymSo62bdgn...</code></td>
+        <td><code>TMTWQx6qSHGd...</code></td>
+        <td>1000.00 USDT</td>
+        <td>2026-01-12 15:53:21 UTC</td>
+      </tr>
+      
+      <tr>
+        <td><code>bb190c97d80ab1b0...</code></td>
+        <td><code>TXymSo62bdgn...</code></td>
+        <td><code>TMTWQx6qSHGd...</code></td>
+        <td>1000.00 USDT</td>
+        <td>2026-01-08 12:07:39 UTC</td>
+      </tr>
+      
+      <tr>
+        <td><code>0202ab0c352acfef...</code></td>
+        <td><code>TXymSo62bdgn...</code></td>
+        <td><code>TMTWQx6qSHGd...</code></td>
+        <td>1000.00 USDT</td>
+        <td>2025-12-26 17:17:57 UTC</td>
+      </tr>
+      
+      <tr>
+        <td><code>922b6666e5bc5235...</code></td>
+        <td><code>TXymSo62bdgn...</code></td>
+        <td><code>TMTWQx6qSHGd...</code></td>
+        <td>950.00 USDT</td>
+        <td>2026-08-19 09:29:00 UTC</td>
+      </tr>
+      
+      <tr>
+        <td><code>a4227a748123a70f...</code></td>
+        <td><code>TXymSo62bdgn...</code></td>
+        <td><code>TMTWQx6qSHGd...</code></td>
+        <td>900.00 USDT</td>
+        <td>2026-01-28 20:33:12 UTC</td>
+      </tr>
+      
+      <tr>
+        <td><code>b4f964dbda929a57...</code></td>
+        <td><code>TXymSo62bdgn...</code></td>
+        <td><code>TMTWQx6qSHGd...</code></td>
+        <td>700.00 USDT</td>
+        <td>2026-06-14 18:53:51 UTC</td>
+      </tr>
+      
+      <tr>
+        <td><code>743e98113560a280...</code></td>
+        <td><code>TXymSo62bdgn...</code></td>
+        <td><code>TMTWQx6qSHGd...</code></td>
+        <td>600.00 USDT</td>
+        <td>2025-12-21 17:51:30 UTC</td>
+      </tr>
+      
+      <tr>
+        <td><code>87809f414fd45cde...</code></td>
+        <td><code>TXymSo62bdgn...</code></td>
+        <td><code>TMTWQx6qSHGd...</code></td>
+        <td>600.00 USDT</td>
+        <td>2025-10-24 18:16:36 UTC</td>
+      </tr>
+      
+      <tr>
+        <td><code>75ab7bd734649ca7...</code></td>
+        <td><code>TXymSo62bdgn...</code></td>
+        <td><code>TMTWQx6qSHGd...</code></td>
+        <td>500.00 USDT</td>
+        <td>2026-05-14 14:52:57 UTC</td>
+      </tr>
+      
+      <tr>
+        <td><code>b881b1688be72d92...</code></td>
+        <td><code>TXymSo62bdgn...</code></td>
+        <td><code>TMTWQx6qSHGd...</code></td>
+        <td>500.00 USDT</td>
+        <td>2026-01-19 01:35:27 UTC</td>
+      </tr>
+      
+      <tr>
+        <td><code>870ab3a2691ff0ce...</code></td>
+        <td><code>TXymSo62bdgn...</code></td>
+        <td><code>TMTWQx6qSHGd...</code></td>
+        <td>500.00 USDT</td>
+        <td>2025-12-05 16:57:18 UTC</td>
+      </tr>
+      
+      <tr>
+        <td><code>e60fa19e25037f6f...</code></td>
+        <td><code>TXymSo62bdgn...</code></td>
+        <td><code>TMTWQx6qSHGd...</code></td>
+        <td>500.00 USDT</td>
+        <td>2025-10-17 20:26:21 UTC</td>
+      </tr>
+      
+      <tr>
+        <td><code>0187e9d08a32a6d0...</code></td>
+        <td><code>TMTWQx6qSHGd...</code></td>
+        <td><code>TU4vEruvZwLL...</code></td>
+        <td>1050.00 USDT</td>
+        <td>2026-05-11 13:11:03 UTC</td>
+      </tr>
+      
+      <tr>
+        <td><code>b61b9d3b8c04ff2e...</code></td>
+        <td><code>TMTWQx6qSHGd...</code></td>
+        <td><code>TU4vEruvZwLL...</code></td>
+        <td>1000.00 USDT</td>
+        <td>2026-01-12 16:18:48 UTC</td>
+      </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Section 63 BSA Digital Evidence Certificate -->
+  <div class="section-title">5. Certificate of Digital Evidence (Section 63 BSA, 2023)</div>
+  <p style="font-size: 8.5pt; color: #4a5568; margin-bottom: 6px;">
+    I hereby certify that the electronic records contained in this docket have been produced by the
+    automated forensic tracing engine "Sutra" during its ordinary course of lawful cryptographic analysis.
+    The hash integrity digest below ensures that no records have been altered or tampered with.
+  </p>
+  <div class="evidence-box">
+    <strong>SECTION 63 BSA SHA-256 EVIDENCE INTEGRITY HASH:</strong><br/>
+    27f0efcc5daf861d940038f1abc4bbb3635a606cb8495a7c3ada61ab4d07a5fa<br/><br/>
+    <strong>HASH PAYLOAD CANONICAL DIGEST:</strong> 300 elements verified<br/>
+    <strong>SYSTEM TIMESTAMP:</strong> 2026-10-02T22:28:04.763599+00:00
+  </div>
+
+  <div class="footer-seal">
+    <strong>Investigating Officer Signature / Token Seal:</strong> __________________________<br/>
+    Authorized under Section 94 BNSS, 2023 & Section 79A Information Technology Act, 2000.
+  </div>
+
+</body>
+</html>

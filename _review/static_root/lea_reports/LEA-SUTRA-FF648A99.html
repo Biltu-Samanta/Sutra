@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>LEA Forensic Investigation Report – Case CASE-TEST-LEA-01</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 20mm 15mm 20mm 15mm;
+      @bottom-right {
+        content: "Page " counter(page) " of " counter(pages);
+        font-size: 8pt;
+        color: #718096;
+      }
+      @bottom-left {
+        content: "CONFIDENTIAL – LAW ENFORCEMENT SENSITIVE | SUTRA ENGINE";
+        font-size: 8pt;
+        color: #718096;
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size: 10pt;
+      color: #1a202c;
+      background: #fff;
+      line-height: 1.5;
+    }
+    .header-table {
+      width: 100%;
+      border-bottom: 2px solid #2b6cb0;
+      padding-bottom: 12px;
+      margin-bottom: 18px;
+    }
+    .badge-confidential {
+      background: #c53030;
+      color: #fff;
+      font-size: 7.5pt;
+      font-weight: bold;
+      padding: 3px 8px;
+      border-radius: 3px;
+      display: inline-block;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .title {
+      font-size: 16pt;
+      font-weight: 700;
+      color: #1a365d;
+      margin-top: 6px;
+    }
+    .subtitle {
+      font-size: 9.5pt;
+      color: #4a5568;
+    }
+    .section-title {
+      font-size: 11pt;
+      font-weight: bold;
+      color: #2b6cb0;
+      border-bottom: 1px solid #e2e8f0;
+      padding-bottom: 4px;
+      margin-top: 18px;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    table.data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 12px;
+      font-size: 8.5pt;
+    }
+    table.data-table th, table.data-table td {
+      border: 1px solid #cbd5e0;
+      padding: 5px 8px;
+      text-align: left;
+    }
+    table.data-table th {
+      background: #edf2f7;
+      color: #2d3748;
+      font-weight: 600;
+    }
+    .evidence-box {
+      background: #f7fafc;
+      border: 1px dashed #4a5568;
+      padding: 10px;
+      margin-top: 14px;
+      border-radius: 4px;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 8pt;
+      word-break: break-all;
+    }
+    .score-badge {
+      font-weight: bold;
+      padding: 2px 6px;
+      border-radius: 3px;
+      background: #ebf8ff;
+      color: #2b6cb0;
+    }
+    .footer-seal {
+      margin-top: 25px;
+      border-top: 1px solid #cbd5e0;
+      padding-top: 10px;
+      font-size: 8pt;
+      color: #4a5568;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <table class="header-table">
+    <tr>
+      <td>
+        <span class="badge-confidential">CONFIDENTIAL // LEA SENSITIVE</span>
+        <div class="title">BLOCKCHAIN FORENSIC INVESTIGATION REPORT</div>
+        <div class="subtitle">Automated Intelligence & VASP Attribution Engine | Sutra Platform</div>
+      </td>
+      <td style="text-align: right; vertical-align: bottom;">
+        <strong>Docket Ref:</strong> LEA-SUTRA-FF648A99<br/>
+        <strong>Generated:</strong> 2026-10-02T17:34:30.250340+00:00
+      </td>
+    </tr>
+  </table>
+
+  <!-- Case Metadata -->
+  <div class="section-title">1. Case Identification & Authority</div>
+  <table class="data-table">
+    <tr>
+      <th style="width: 25%;">Case / Incident ID</th>
+      <td>CASE-TEST-LEA-01</td>
+      <th style="width: 25%;">NCRP Reference</th>
+      <td>CASE-TEST-LEA-01</td>
+    </tr>
+    <tr>
+      <th>Investigating Officer</th>
+      <td>Investigating Officer</td>
+      <th>Badge / Service ID</th>
+      <td>CYBER-LE-01</td>
+    </tr>
+    <tr>
+      <th>Agency / Division</th>
+      <td>State Cyber Crime Police / I4C Portal</td>
+      <th>Jurisdiction</th>
+      <td>India (BNSS / IT Act)</td>
+    </tr>
+  </table>
+
+  <!-- Target & Attribution Summary -->
+  <div class="section-title">2. Executive Forensics & VASP Attribution Summary</div>
+  <table class="data-table">
+    <tr>
+      <th style="width: 25%;">Suspect Origin Wallet</th>
+      <td colspan="3"><code>TSuspect1234567890</code> (TRON)</td>
+    </tr>
+    <tr>
+      <th>Identified VASP</th>
+      <td><strong>Binance</strong></td>
+      <th>FIU-IND Registered</th>
+      <td>NO / Offshore Entity</td>
+    </tr>
+    <tr>
+      <th>Nearest KYC Deposit Wallet</th>
+      <td colspan="3"><code>TBinanceDeposit1234567890</code></td>
+    </tr>
+    <tr>
+      <th>Exchange Hot Wallet Sweep</th>
+      <td colspan="3"><code>TN3W4H6rK2ce4vX9YnFQHwKENnHjoxb3m9</code></td>
+    </tr>
+    <tr>
+      <th>Attribution Confidence</th>
+      <td><span class="score-badge">87.5 / 100</span></td>
+      <th>Hops to Deposit</th>
+      <td>2 Hop(s)</td>
+    </tr>
+    <tr>
+      <th>Attribution Rationale</th>
+      <td colspan="3">Attributed to Binance with 87.5/100 confidence.</td>
+    </tr>
+  </table>
+
+  <!-- Multi-factor Confidence Breakdown -->
+  
+  <div class="section-title">3. Multi-Factor Explainable Confidence Matrix</div>
+  <table class="data-table">
+    <tr>
+      <th>Factor</th>
+      <th>Max Points</th>
+      <th>Awarded Score</th>
+      <th>Forensic Factor Description</th>
+    </tr>
+    <tr>
+      <td>Label Reliability</td>
+      <td>30</td>
+      <td>26.0</td>
+      <td>Authoritative registry / FIU registration validation</td>
+    </tr>
+    <tr>
+      <td>Hop Proximity</td>
+      <td>25</td>
+      <td>21.0</td>
+      <td>Physical proximity in graph from suspect to exchange deposit</td>
+    </tr>
+    <tr>
+      <td>Value Share</td>
+      <td>20</td>
+      <td>17.5</td>
+      <td>Fraction of outbound suspect volume entering this entity</td>
+    </tr>
+    <tr>
+      <td>Sweep Pattern</td>
+      <td>15</td>
+      <td>15.0</td>
+      <td>Verification of subsequent sweep into exchange hot wallet pool</td>
+    </tr>
+    <tr>
+      <td>Timing Correlation</td>
+      <td>10</td>
+      <td>8.0</td>
+      <td>Speed of fund consolidation across layering mules</td>
+    </tr>
+  </table>
+  
+
+  <!-- Flow Ledger -->
+  <div class="section-title">4. Forensically Traced Transaction Ledger</div>
+  <table class="data-table">
+    <thead>
+      <tr>
+        <th>Tx Hash</th>
+        <th>From Address</th>
+        <th>To Address</th>
+        <th>Value</th>
+        <th>Timestamp (UTC)</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+      <tr>
+        <td><code>0xmock1234567890...</code></td>
+        <td><code>TSuspect1234...</code></td>
+        <td><code>TBinanceDepo...</code></td>
+        <td>15000.00 USDT</td>
+        <td>2026-10-02 17:34:30 UTC</td>
+      </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Section 63 BSA Digital Evidence Certificate -->
+  <div class="section-title">5. Certificate of Digital Evidence (Section 63 BSA, 2023)</div>
+  <p style="font-size: 8.5pt; color: #4a5568; margin-bottom: 6px;">
+    I hereby certify that the electronic records contained in this docket have been produced by the
+    automated forensic tracing engine "Sutra" during its ordinary course of lawful cryptographic analysis.
+    The hash integrity digest below ensures that no records have been altered or tampered with.
+  </p>
+  <div class="evidence-box">
+    <strong>SECTION 63 BSA SHA-256 EVIDENCE INTEGRITY HASH:</strong><br/>
+    adcbe182c3c89311bd3fbebcebed799bac27c311e7c7b5906c37deedf045014d<br/><br/>
+    <strong>HASH PAYLOAD CANONICAL DIGEST:</strong> 3 elements verified<br/>
+    <strong>SYSTEM TIMESTAMP:</strong> 2026-10-02T17:34:30.250340+00:00
+  </div>
+
+  <div class="footer-seal">
+    <strong>Investigating Officer Signature / Token Seal:</strong> __________________________<br/>
+    Authorized under Section 94 BNSS, 2023 & Section 79A Information Technology Act, 2000.
+  </div>
+
+</body>
+</html>

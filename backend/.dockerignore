@@ -1,0 +1,38 @@
+# Python build artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Secrets & Environment variables (CRITICAL: prevent leaking API keys)
+.env
+.env.*
+!.env.example
+
+# Version control & IDEs
+.git/
+.gitignore
+.vscode/
+.idea/
+.ruff_cache/
+.pytest_cache/
+
+# Heavy local dev files & experimental scripts
+notebooks/
+scratch/
+.auth0-*
+*.log
+
+# Generated output files
+static/notices/*.pdf
+
+# OS junk
+.DS_Store
+Thumbs.db
